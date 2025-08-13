@@ -1,0 +1,694 @@
+0
+1
+00:00:00,510 --> 00:00:04,080
+All right. So I've added a few more details here and there to
+1
+
+2
+00:00:04,080 --> 00:00:05,340
+this personal site
+2
+
+3
+00:00:05,550 --> 00:00:09,780
+and it's now really coming along and starting to look like a real website that
+3
+
+4
+00:00:09,780 --> 00:00:12,570
+you might come across browsing the web. Now,
+4
+
+5
+00:00:12,570 --> 00:00:17,070
+the next thing that I want to do is when we go to the contact me page,
+5
+
+6
+00:00:17,580 --> 00:00:21,720
+it's a little bit sparse at the moment. It's only got my fictional address,
+6
+
+7
+00:00:21,750 --> 00:00:24,930
+my fictional number and my fictional email. Now,
+7
+
+8
+00:00:24,930 --> 00:00:28,590
+what if I could add a form at the end of this
+8
+
+9
+00:00:29,220 --> 00:00:32,400
+where I allow people to put down their name and their email
+9
+
+10
+00:00:32,850 --> 00:00:35,820
+and they can message me using that form?
+10
+
+11
+00:00:35,880 --> 00:00:38,570
+How would we do that in HTML? So,
+11
+
+12
+00:00:38,750 --> 00:00:40,850
+of course, first place to head to
+12
+
+13
+00:00:40,910 --> 00:00:45,380
+<v 0>is the MDN web docs. And we've got our form element.</v>
+13
+
+14
+00:00:45,680 --> 00:00:49,430
+Now you can read through all of these attributes and start getting an
+14
+
+15
+00:00:49,430 --> 00:00:53,840
+understanding of how a form works and how you can put one together. Now,
+15
+
+16
+00:00:53,870 --> 00:00:58,580
+in order for forms to really come alive and to work as you would expect them
+16
+
+17
+00:00:58,580 --> 00:01:02,750
+to, it actually requires a little bit more than just HTML,
+17
+
+18
+00:01:02,960 --> 00:01:06,590
+because we need to specify the behavior of the form.
+18
+
+19
+00:01:07,010 --> 00:01:10,850
+We can design the form and we can structure the form for our website
+19
+
+20
+00:01:11,180 --> 00:01:13,460
+but until we learn about JavaScript,
+20
+
+21
+00:01:13,490 --> 00:01:16,700
+we won't be able to tap into its full functionality just yet.
+21
+
+22
+00:01:17,720 --> 00:01:19,310
+But we can get pretty close.
+22
+
+23
+00:01:19,550 --> 00:01:24,200
+So let's go ahead and create a brand new form inside our contact-
+23
+
+24
+00:01:24,200 --> 00:01:28,820
+me.html page. Just below the last paragraph tag,
+24
+
+25
+00:01:29,180 --> 00:01:34,180
+let's add a brand new form. And you can see that with the autosuggest
+25
+
+26
+00:01:35,780 --> 00:01:39,290
+these are the default things that come up. Now,
+26
+
+27
+00:01:39,290 --> 00:01:40,700
+I'm going to keep them as they are and
+27
+
+28
+00:01:40,790 --> 00:01:44,930
+we're going to go inside the form tag and we're going to create our first
+28
+
+29
+00:01:44,990 --> 00:01:45,823
+label.
+29
+
+30
+00:01:46,490 --> 00:01:50,390
+Now our first label is simply going to be called your name.
+30
+
+31
+00:01:50,690 --> 00:01:54,470
+So this is where we ask our user for their name input.
+31
+
+32
+00:01:55,040 --> 00:01:59,480
+And in order to store that information or allow them to type that information,
+32
+
+33
+00:01:59,780 --> 00:02:04,640
+we need to add an input and the type of input is going to be text.
+33
+
+34
+00:02:04,880 --> 00:02:08,120
+So it's just going to be a text box that allows them to put in their name.
+34
+
+35
+00:02:08,720 --> 00:02:13,220
+And if we hit save and check out what our website looks like at the moment,
+35
+
+36
+00:02:13,610 --> 00:02:18,410
+then you can see we've got our label here and we've got a box where somebody can
+36
+
+37
+00:02:18,410 --> 00:02:22,880
+type in some inputs. Now the thing that we're missing is a submit button.
+37
+
+38
+00:02:23,540 --> 00:02:28,540
+Now a submit button also falls under the inputs of a form and you can see it
+38
+
+39
+00:02:30,380 --> 00:02:31,213
+right here.
+39
+
+40
+00:02:31,460 --> 00:02:35,480
+It's simply an input instead of having a type of text,
+40
+
+41
+00:02:35,750 --> 00:02:40,670
+it has the type of submit and all you need to do is to change the word text
+41
+
+42
+00:02:41,000 --> 00:02:45,290
+to submit and delete the value attribute and hit
+42
+
+43
+00:02:45,290 --> 00:02:47,660
+save and refresh.
+43
+
+44
+00:02:47,900 --> 00:02:51,920
+You'll see that you get this submit button without having to put in any extra
+44
+
+45
+00:02:51,920 --> 00:02:55,310
+effort. So that's the beauty of some of these form inputs.
+45
+
+46
+00:02:55,850 --> 00:02:59,030
+And we can check out some of the other ones inside the docs by going to the related
+46
+
+47
+00:02:59,440 --> 00:03:02,920
+topics. And there's loads of different types of inputs.
+47
+
+48
+00:03:03,400 --> 00:03:08,380
+There's buttons which are inputs, there's check boxes, color, date.
+48
+
+49
+00:03:08,500 --> 00:03:11,500
+Let's give some of them a try and see what they look like on screen.
+49
+
+50
+00:03:11,920 --> 00:03:16,030
+Just before the submit button, let's add an input that has type
+50
+
+51
+00:03:16,060 --> 00:03:18,550
+maybe color. And of course,
+51
+
+52
+00:03:18,550 --> 00:03:22,750
+remember you have to spell it the American way with a single 'o' instead of
+52
+
+53
+00:03:22,810 --> 00:03:23,643
+'ou'.
+53
+
+54
+00:03:24,040 --> 00:03:28,810
+So let's hit save and refresh and you can see
+54
+
+55
+00:03:28,810 --> 00:03:32,320
+we now have a color picker on our website. And when you click on it,
+55
+
+56
+00:03:32,650 --> 00:03:37,360
+it brings up the color picker where we can select any color we'd like,
+56
+
+57
+00:03:37,660 --> 00:03:42,070
+and you might submit a form that maybe has your favorite color or change the
+57
+
+58
+00:03:42,070 --> 00:03:44,680
+website using a color picker input.
+58
+
+59
+00:03:45,400 --> 00:03:47,380
+Another cool one is the check box.
+59
+
+60
+00:03:47,560 --> 00:03:52,560
+So we can add a checkbox by using input and changing text to check box. Hit
+60
+
+61
+00:03:55,480 --> 00:04:00,130
+save, hit refresh, and you can see, we now have a little check box.
+61
+
+62
+00:04:00,640 --> 00:04:03,640
+So you can have a line break here
+62
+
+63
+00:04:03,670 --> 00:04:08,230
+forcing this to go on to the next line. And let's create a label where it says
+63
+
+64
+00:04:08,290 --> 00:04:13,290
+do you want to sign up to the email list, and hit save, refresh,
+64
+
+65
+00:04:16,900 --> 00:04:19,660
+and you can see you've got this classic checkbox.
+65
+
+66
+00:04:19,690 --> 00:04:23,110
+Do you want to sign up to the email list, check or uncheck and hit submit?
+66
+
+67
+00:04:23,530 --> 00:04:24,550
+Or you can put something like
+67
+
+68
+00:04:24,550 --> 00:04:28,060
+have you read the terms and conditions or any other thing that might fit with a
+68
+
+69
+00:04:28,090 --> 00:04:28,923
+checkbox.
+69
+
+70
+00:04:29,500 --> 00:04:33,100
+Now the last one that I wanted to show you before we proceed was the password
+70
+
+71
+00:04:33,100 --> 00:04:33,933
+input.
+71
+
+72
+00:04:34,210 --> 00:04:39,210
+So let's delete the checkbox and let's add a password input.
+72
+
+73
+00:04:41,170 --> 00:04:46,120
+The cool thing about the password input is that when you type anything inside
+73
+
+74
+00:04:46,120 --> 00:04:46,953
+this box,
+74
+
+75
+00:04:47,080 --> 00:04:52,080
+ideally you'd want a label of course here to show that this is the password.
+75
+
+76
+00:04:54,820 --> 00:04:59,290
+But we know this is a password field because you can either right-click and hit
+76
+
+77
+00:04:59,290 --> 00:05:00,160
+inspect
+77
+
+78
+00:05:00,700 --> 00:05:05,440
+and you'll see that this is our password input or you know that the next thing
+78
+
+79
+00:05:05,440 --> 00:05:09,400
+that comes after the password label is of course the password input.
+79
+
+80
+00:05:09,790 --> 00:05:12,880
+But whenever you type anything in here, by default,
+80
+
+81
+00:05:13,240 --> 00:05:14,920
+everything you type is masked.
+81
+
+82
+00:05:15,160 --> 00:05:19,900
+So these are for fields where you don't want somebody overlooking the user to be
+82
+
+83
+00:05:19,900 --> 00:05:21,550
+able to see what their password is.
+83
+
+84
+00:05:22,240 --> 00:05:26,710
+Feel free to have a bit of fun and try out all of these different input types
+84
+
+85
+00:05:27,190 --> 00:05:31,960
+and see what they look like and see what they do. And once you do that,
+85
+
+86
+00:05:31,960 --> 00:05:33,430
+you'll come to realize that a lot of
+86
+
+87
+00:05:33,430 --> 00:05:38,430
+the things that you see on the web are just very simple HTML inputs.
+87
+
+88
+00:05:38,800 --> 00:05:43,000
+And as we build our knowledge in HTML, CSS and JavaScript,
+88
+
+89
+00:05:43,270 --> 00:05:47,620
+we're going to come back and see how forms work in more detail.
+89
+
+90
+00:05:47,770 --> 00:05:51,550
+So have an explore of have that and see what they all look like when you just add
+90
+
+91
+00:05:51,550 --> 00:05:52,420
+them to your website,
+91
+
+92
+00:05:52,660 --> 00:05:55,600
+but we'll experience the full functionality a little bit later on.
+92
+
+93
+00:05:56,230 --> 00:06:00,350
+Now, let's just quickly review what we've learned about HTML forms.
+93
+
+94
+00:06:00,830 --> 00:06:05,830
+We use the form tag to define what should go into our form and this by itself
+94
+
+95
+00:06:07,250 --> 00:06:11,270
+doesn't actually do anything. So in order for the form to do anything,
+95
+
+96
+00:06:11,480 --> 00:06:16,480
+you'll need two important HTML elements and that's the label and the input.
+96
+
+97
+00:06:17,420 --> 00:06:19,610
+And between the opening and closing label tags,
+97
+
+98
+00:06:19,820 --> 00:06:24,820
+you can write some text that will be displayed as a label inside your form.
+98
+
+99
+00:06:25,370 --> 00:06:30,370
+The next most important HTML element that's associated with forms are the inputs.
+99
+
+100
+00:06:31,010 --> 00:06:33,890
+And the input is a self-closing tag
+100
+
+101
+00:06:34,040 --> 00:06:36,080
+so it doesn't have a closing tag.
+101
+
+102
+00:06:36,440 --> 00:06:41,440
+Instead, you can define the input type by using the type attribute
+102
+
+103
+00:06:42,170 --> 00:06:46,940
+and there's a whole bunch of input types that you can tap into to use inside
+103
+
+104
+00:06:46,940 --> 00:06:51,230
+your form. For example, in this case, the type is set to text.
+104
+
+105
+00:06:51,530 --> 00:06:55,520
+So we get a textbox where the user can input their name.
+105
+
+106
+00:06:55,850 --> 00:07:00,850
+But you can also use an input element that has the type attribute set as submit
+106
+
+107
+00:07:02,690 --> 00:07:04,670
+and this creates a button.
+107
+
+108
+00:07:04,910 --> 00:07:09,410
+So you can see that by setting the attribute type to various predefined key
+108
+
+109
+00:07:09,410 --> 00:07:14,120
+words, you actually end up with completely different things on your website.
+109
+
+110
+00:07:14,480 --> 00:07:19,480
+And it might seem strange that even though we're using the same HTML element,
+110
+
+111
+00:07:20,180 --> 00:07:21,290
+i.e. the input,
+111
+
+112
+00:07:21,500 --> 00:07:25,160
+we're actually getting completely different objects on our website,
+112
+
+113
+00:07:25,400 --> 00:07:27,890
+anywhere from textboxes, to buttons
+113
+
+114
+00:07:27,890 --> 00:07:32,870
+to color pickers and a myriad array of different things that we can create just
+114
+
+115
+00:07:32,870 --> 00:07:35,540
+by changing that type. Now,
+115
+
+116
+00:07:35,540 --> 00:07:38,720
+aside from just the text and submit input types,
+116
+
+117
+00:07:38,930 --> 00:07:40,670
+if you have a look at the MDN docs,
+117
+
+118
+00:07:40,670 --> 00:07:44,240
+you'll see that there's loads more different keywords that you can use.
+118
+
+119
+00:07:44,450 --> 00:07:44,990
+For example,
+119
+
+120
+00:07:44,990 --> 00:07:49,820
+the input type where you allow the user to upload a file or the date picker or
+120
+
+121
+00:07:49,820 --> 00:07:52,070
+the radio button or a range.
+121
+
+122
+00:07:52,310 --> 00:07:57,310
+And you can see that I've only got static images in my slide to show you what
+122
+
+123
+00:07:57,530 --> 00:07:58,363
+they look like.
+123
+
+124
+00:07:58,730 --> 00:08:03,730
+But I want you to look through the MDN documentation for the input HTML element
+124
+
+125
+00:08:05,030 --> 00:08:10,030
+and I want you to create a new HTML file that you're going to put onto your
+125
+
+126
+00:08:10,220 --> 00:08:15,220
+desktop and you can open it in order to see it live in action.
+126
+
+127
+00:08:15,320 --> 00:08:19,790
+For example, the date picker now works and my range can be toggled.
+127
+
+128
+00:08:19,820 --> 00:08:21,680
+I can switch my radio button on,
+128
+
+129
+00:08:21,950 --> 00:08:24,920
+I can choose a file and a whole bunch of things.
+129
+
+130
+00:08:25,100 --> 00:08:27,560
+So use it as a living notebook, if you will.
+130
+
+131
+00:08:30,700 --> 00:08:33,970
+That should've been really easy and just to quickly show you,
+131
+
+132
+00:08:34,180 --> 00:08:38,830
+this is what you could have created in order to achieve this. Now at the moment,
+132
+
+133
+00:08:39,040 --> 00:08:44,040
+we're not yet looking into the other attributes for our form or for our inputs.
+133
+
+134
+00:08:44,860 --> 00:08:49,860
+And we're only changing the type attribute to some of these predefined keywords
+134
+
+135
+00:08:51,640 --> 00:08:55,800
+that you can see are listed on the MDN developer docs.
+135
+
+136
+00:08:56,460 --> 00:08:57,420
+In the next lesson,
+136
+
+137
+00:08:57,450 --> 00:09:02,450
+we'll look closer at how forms work and how you can capture and reveal what the
+137
+
+138
+00:09:03,000 --> 00:09:07,650
+user has chosen for each of the inputs. So for all of that and more,
+138
+
+139
+00:09:07,710 --> 00:09:08,940
+I'll see you on the next lesson.

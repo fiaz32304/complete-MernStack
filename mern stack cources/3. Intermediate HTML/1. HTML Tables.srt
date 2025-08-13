@@ -1,0 +1,889 @@
+0
+1
+00:00:00,690 --> 00:00:01,050
+All right.
+1
+
+2
+00:00:01,050 --> 00:00:06,050
+So previously we managed to get our website to include images as well as
+2
+
+3
+00:00:06,120 --> 00:00:10,080
+links. So we added these image tags as was anchor tags
+3
+
+4
+00:00:10,170 --> 00:00:14,220
+which can take us to external sites, but also to internal sites,
+4
+
+5
+00:00:14,310 --> 00:00:17,280
+like the brand new my hobbies page that we created,
+5
+
+6
+00:00:17,370 --> 00:00:20,640
+or the contact me. Now in this lesson,
+6
+
+7
+00:00:20,640 --> 00:00:25,640
+we're going to take things a little bit further. In our personal site/CV
+7
+
+8
+00:00:25,890 --> 00:00:30,060
+I want to have a section where we can list our work experience,
+8
+
+9
+00:00:30,090 --> 00:00:33,690
+so what we've done and when we've done it. Currently,
+9
+
+10
+00:00:33,690 --> 00:00:38,490
+if we went into our code and say below that unordered list,
+10
+
+11
+00:00:38,730 --> 00:00:41,430
+and, um, we add a h3,
+11
+
+12
+00:00:42,000 --> 00:00:45,180
+let's call it work experience. Now,
+12
+
+13
+00:00:45,340 --> 00:00:50,340
+if we added a standard paragraph tag and we said maybe 2010
+13
+
+14
+00:00:50,520 --> 00:00:54,150
+to 2013, um,
+14
+
+15
+00:00:54,180 --> 00:00:59,180
+let's say Lead Developer at Tempo App.
+15
+
+16
+00:01:00,630 --> 00:01:02,880
+So let's save that and take a look.
+16
+
+17
+00:01:03,030 --> 00:01:05,970
+And if we refresh then it looks like this,
+17
+
+18
+00:01:06,360 --> 00:01:08,640
+which is all well and good if we have that range,
+18
+
+19
+00:01:08,670 --> 00:01:11,640
+but what if I wanted to add something where I didn't have a year range?
+19
+
+20
+00:01:11,670 --> 00:01:15,810
+Say if it was 2010 when I worked as a researcher,
+20
+
+21
+00:01:16,440 --> 00:01:16,860
+uh,
+21
+
+22
+00:01:16,860 --> 00:01:21,860
+at Institute of Cognitive Neurosciences.
+22
+
+23
+00:01:22,770 --> 00:01:27,600
+So let's save that and let's refresh and you can see that it looks really
+23
+
+24
+00:01:28,850 --> 00:01:30,170
+<v 1>right? Like this part</v>
+24
+
+25
+00:01:31,190 --> 00:01:32,023
+<v 0>and this part,</v>
+25
+
+26
+00:01:32,030 --> 00:01:37,030
+they're not really indented at the same level horizontally and everything just looks
+26
+
+27
+00:01:39,470 --> 00:01:40,490
+really messy.
+27
+
+28
+00:01:40,820 --> 00:01:44,570
+So how can we implement something that looks nice like this where there's
+28
+
+29
+00:01:44,600 --> 00:01:49,280
+even a bit of padding in between and everything looks really regular?
+29
+
+30
+00:01:49,820 --> 00:01:50,240
+Well,
+30
+
+31
+00:01:50,240 --> 00:01:55,240
+one of the ways that we can achieve this using just HTML is to create a table.
+31
+
+32
+00:01:56,780 --> 00:02:01,780
+So if we have a look at the docs on MDN and we look at table,
+32
+
+33
+00:02:02,150 --> 00:02:06,170
+you can see that a very simple table just looks like this.
+33
+
+34
+00:02:06,200 --> 00:02:08,870
+This is a bog-standard, simple table.
+34
+
+35
+00:02:09,320 --> 00:02:11,990
+But tables can get really complicated as well
+35
+
+36
+00:02:11,990 --> 00:02:15,740
+and you can use it to structure and represent data in your website.
+36
+
+37
+00:02:16,040 --> 00:02:20,600
+So we could have table headings, we could have different cells,
+37
+
+38
+00:02:20,930 --> 00:02:23,570
+we could have column groups and columns,
+38
+
+39
+00:02:23,570 --> 00:02:28,100
+we can have captions and a whole bunch of things. So let's try and add
+39
+
+40
+00:02:28,100 --> 00:02:33,100
+a table to our website so that we can make our CV look a little bit more like
+40
+
+41
+00:02:34,070 --> 00:02:34,790
+this.
+41
+
+42
+00:02:34,790 --> 00:02:39,790
+So let's first add a horizontal rule here between our table and these two links.
+42
+
+43
+00:02:41,630 --> 00:02:43,850
+And let's use auto-complete to
+43
+
+44
+00:02:43,850 --> 00:02:47,870
+add a table tag for us. Inside the table
+44
+
+45
+00:02:47,870 --> 00:02:51,380
+we can create table rows and also table data,
+45
+
+46
+00:02:51,560 --> 00:02:53,420
+which are essentially like cells.
+46
+
+47
+00:02:53,840 --> 00:02:58,840
+So say if we create a brand new table row and it's really helpful that
+47
+
+48
+00:02:59,320 --> 00:03:03,070
+auto-suggest actually tells you what each of these tags are.
+48
+
+49
+00:03:03,160 --> 00:03:05,470
+So let's go ahead and hit enter.
+49
+
+50
+00:03:06,340 --> 00:03:08,500
+So this is a single row
+50
+
+51
+00:03:08,890 --> 00:03:12,310
+and if I want to create another row underneath then I would just have to create
+51
+
+52
+00:03:13,090 --> 00:03:17,260
+another tr. Now inside the top row,
+52
+
+53
+00:03:17,620 --> 00:03:22,620
+I'm going to have two table data elements or rather two cells in this single
+53
+
+54
+00:03:23,290 --> 00:03:24,123
+row.
+54
+
+55
+00:03:24,340 --> 00:03:29,340
+And to represent the cells, I'm going to use the td or table data element.
+55
+
+56
+00:03:31,870 --> 00:03:35,650
+So the first cell is going to contain my date
+56
+
+57
+00:03:37,240 --> 00:03:42,240
+and the second cell is going to contain what I did.
+57
+
+58
+00:03:44,680 --> 00:03:47,350
+So that's our first row complete.
+58
+
+59
+00:03:47,590 --> 00:03:52,590
+Now let's go ahead and create another two cells or another two tds inside our
+59
+
+60
+00:03:54,940 --> 00:03:59,470
+second row. So let's again, copy and paste, um,
+60
+
+61
+00:03:59,500 --> 00:04:00,333
+the date
+61
+
+62
+00:04:02,020 --> 00:04:06,250
+and the work into the table
+62
+
+63
+00:04:06,280 --> 00:04:07,390
+data elements.
+63
+
+64
+00:04:07,810 --> 00:04:12,810
+And I'm going to delete these two paragraphs. Let's hit save,
+64
+
+65
+00:04:13,120 --> 00:04:17,230
+go back to our website and hit refresh and see what it looks like. Okay.
+65
+
+66
+00:04:17,230 --> 00:04:20,590
+That's already looking a lot better than before, right?
+66
+
+67
+00:04:21,220 --> 00:04:26,220
+It's being a table means that all columns our structured together.
+67
+
+68
+00:04:27,070 --> 00:04:32,070
+So these two lines are structured so that they are indented to the same place
+68
+
+69
+00:04:33,250 --> 00:04:37,810
+and it makes it look so much neater than before. Now,
+69
+
+70
+00:04:37,810 --> 00:04:42,130
+aside from having just rows and cells, tables also have headers,
+70
+
+71
+00:04:42,160 --> 00:04:47,160
+body and footer mirroring what we have for our HTML websites.
+71
+
+72
+00:04:48,520 --> 00:04:53,520
+And you can declare them quite simply by writing thead for table
+72
+
+73
+00:04:54,880 --> 00:04:59,560
+head, and tbody for table body,
+73
+
+74
+00:05:00,220 --> 00:05:04,930
+and tfoot for table footer. Now inside the table head,
+74
+
+75
+00:05:05,320 --> 00:05:08,320
+we can add some titles to each of our columns
+75
+
+76
+00:05:08,500 --> 00:05:11,530
+and they get formatted by default in bold.
+76
+
+77
+00:05:11,710 --> 00:05:16,000
+So if we create a new table row and inside this row
+77
+
+78
+00:05:16,030 --> 00:05:19,090
+instead of creating table data or td elements,
+78
+
+79
+00:05:19,330 --> 00:05:24,330
+we're going to create th elements or a table header cell element.
+79
+
+80
+00:05:25,030 --> 00:05:28,720
+And inside here, we're going to give the name of our first column
+80
+
+81
+00:05:29,050 --> 00:05:31,120
+which is going to be Dates.
+81
+
+82
+00:05:32,500 --> 00:05:35,320
+And then we're going to create another table header cell
+82
+
+83
+00:05:35,620 --> 00:05:38,440
+and this one is going to be the work that we did.
+83
+
+84
+00:05:39,040 --> 00:05:43,240
+So let's hit save and hit refresh.
+84
+
+85
+00:05:43,540 --> 00:05:48,460
+And you'll see that we now have table headings for each of our columns.
+85
+
+86
+00:05:49,240 --> 00:05:52,600
+Now, for those of you guys who might've been playing around with this code,
+86
+
+87
+00:05:52,720 --> 00:05:57,070
+you would have realized that if I cut this table row
+87
+
+88
+00:05:57,410 --> 00:06:00,350
+and instead of putting it inside the header,
+88
+
+89
+00:06:01,130 --> 00:06:05,060
+I actually put it just inside the main table
+89
+
+90
+00:06:05,540 --> 00:06:09,890
+and I delete all of this and we hit save and we hit refresh,
+90
+
+91
+00:06:10,220 --> 00:06:15,220
+you'll notice that it looks exactly the same and that's because we're using
+91
+
+92
+00:06:15,260 --> 00:06:16,610
+these special elements
+92
+
+93
+00:06:16,760 --> 00:06:21,410
+the table header cell elements and most browsers know how these should be
+93
+
+94
+00:06:21,410 --> 00:06:24,020
+formatted. So it looks exactly the same.
+94
+
+95
+00:06:24,380 --> 00:06:28,760
+But the reason why we might have different sections of our table, for example,
+95
+
+96
+00:06:29,000 --> 00:06:30,890
+putting these cells inside the table
+96
+
+97
+00:06:30,890 --> 00:06:35,890
+head and putting these inside the body is because sometimes we might want to
+97
+
+98
+00:06:36,080 --> 00:06:38,180
+select and isolate the table
+98
+
+99
+00:06:38,180 --> 00:06:43,100
+header and the table body in order to style it differently or make it function in
+99
+
+100
+00:06:43,100 --> 00:06:45,590
+a different way. For example,
+100
+
+101
+00:06:45,590 --> 00:06:48,830
+if we separated the table header from the table body,
+101
+
+102
+00:06:49,160 --> 00:06:53,750
+we can use some code to isolate the header and fix it in place so that when
+102
+
+103
+00:06:53,750 --> 00:06:58,160
+users scroll through our table, we can keep these headings on the screen.
+103
+
+104
+00:06:58,790 --> 00:07:03,440
+Now that requires a little bit more fancy stuff like CSS or JavaScript,
+104
+
+105
+00:07:03,530 --> 00:07:05,810
+which we'll wait until later modules to talk about,
+105
+
+106
+00:07:05,870 --> 00:07:10,870
+but it's a good reason to be aware of why you might want to place the header
+106
+
+107
+00:07:11,180 --> 00:07:14,660
+cells inside the head, the main body of the table inside the body,
+107
+
+108
+00:07:14,960 --> 00:07:19,070
+and maybe some footer cells into the table footer. And generally,
+108
+
+109
+00:07:19,070 --> 00:07:23,930
+this is the structure that you'll see for most tables with a head and with a
+109
+
+110
+00:07:23,930 --> 00:07:27,980
+body. Now, if we have a look at these tables on the MDN
+110
+
+111
+00:07:27,980 --> 00:07:31,190
+developer docs, you can see that they've got outlines
+111
+
+112
+00:07:31,370 --> 00:07:35,720
+whereas what we've created doesn't have any borders or boundaries or outlines at
+112
+
+113
+00:07:35,720 --> 00:07:40,370
+all. If we take a look at the MDN developer docs for the table element,
+113
+
+114
+00:07:40,760 --> 00:07:44,960
+you can see that there's a whole bunch of attributes, such as background
+114
+
+115
+00:07:44,960 --> 00:07:48,950
+color, or border or cell padding,
+115
+
+116
+00:07:48,950 --> 00:07:50,000
+cell spacing,
+116
+
+117
+00:07:50,300 --> 00:07:54,410
+and a whole bunch of things that you can apply to the table element to change
+117
+
+118
+00:07:54,440 --> 00:07:55,460
+its appearance.
+118
+
+119
+00:07:55,940 --> 00:08:00,230
+But if you take a closer look at each of these styling attributes,
+119
+
+120
+00:08:00,290 --> 00:08:05,290
+then you can see they all have a little thumbs-down sign next to them.
+120
+
+121
+00:08:05,720 --> 00:08:10,400
+And this is because all of these attributes for the table element are
+121
+
+122
+00:08:10,430 --> 00:08:11,390
+deprecated.
+122
+
+123
+00:08:11,810 --> 00:08:15,950
+And you'll hear that word quite often in Programming across many different
+123
+
+124
+00:08:15,950 --> 00:08:17,300
+languages and disciplines.
+124
+
+125
+00:08:17,690 --> 00:08:21,800
+And what that word means is that it's almost like it's downgraded.
+125
+
+126
+00:08:21,920 --> 00:08:24,590
+It's something that they no longer recommend you using.
+126
+
+127
+00:08:25,070 --> 00:08:29,990
+And the reason is because we have to always keep in mind that HTML is for
+127
+
+128
+00:08:29,990 --> 00:08:30,823
+structure,
+128
+
+129
+00:08:31,130 --> 00:08:35,660
+CSS is for styling and the JavaScript is for behavior.
+129
+
+130
+00:08:36,050 --> 00:08:40,760
+And even though it's possible to affect the style of your website through using
+130
+
+131
+00:08:40,790 --> 00:08:44,960
+HTML attributes or through using different HTML elements,
+131
+
+132
+00:08:45,290 --> 00:08:48,110
+you have to try and resist when you can.
+132
+
+133
+00:08:48,530 --> 00:08:50,960
+But since we haven't yet learned about CSS,
+133
+
+134
+00:08:51,170 --> 00:08:56,130
+I wanna take you into the primitive days before web designers had access to CSS what
+134
+
+135
+00:08:56,130 --> 00:08:59,040
+they might've done using just HTML.
+135
+
+136
+00:08:59,220 --> 00:09:01,860
+And if we scroll through these attributes,
+136
+
+137
+00:09:02,040 --> 00:09:04,680
+you'll come across something called border.
+137
+
+138
+00:09:05,370 --> 00:09:07,650
+And this defines, in pixels,
+138
+
+139
+00:09:07,770 --> 00:09:10,440
+the size of the frame that's surrounding the table.
+139
+
+140
+00:09:11,310 --> 00:09:14,610
+We can add this attribute to our table element,
+140
+
+141
+00:09:14,880 --> 00:09:19,710
+not to thead or table row or a table heading cell, well any of the other ones
+141
+
+142
+00:09:19,710 --> 00:09:22,560
+because we're currently reading the table docs, remember,
+142
+
+143
+00:09:23,310 --> 00:09:28,290
+and we can add it and say, border equals one pixel
+143
+
+144
+00:09:28,320 --> 00:09:30,960
+let's say. And if we refresh our site,
+144
+
+145
+00:09:31,050 --> 00:09:36,050
+then we'll see this incredibly ugly HTML table that you'll see a lot in
+145
+
+146
+00:09:36,570 --> 00:09:39,750
+websites from the nineties. So let's get rid of it.
+146
+
+147
+00:09:41,910 --> 00:09:46,910
+Let's just quickly recap the HTML structure for creating a table. To start off,
+147
+
+148
+00:09:48,570 --> 00:09:51,900
+we create this table tag and we also close it
+148
+
+149
+00:09:52,290 --> 00:09:56,520
+and everything in between is the actual content of our table.
+149
+
+150
+00:09:57,030 --> 00:10:01,050
+This just creates a simple table. Now, by default,
+150
+
+151
+00:10:01,080 --> 00:10:06,080
+your browser will style the table to not have any borders or padding or anything
+151
+
+152
+00:10:06,900 --> 00:10:08,490
+style related. Now,
+152
+
+153
+00:10:08,490 --> 00:10:11,910
+in order for our table to actually start holding some pieces of data,
+153
+
+154
+00:10:12,180 --> 00:10:16,020
+we're going to have to create something called a table row.
+154
+
+155
+00:10:16,380 --> 00:10:21,380
+And between the open and closing tr tags is where the data for that row is going
+155
+
+156
+00:10:22,680 --> 00:10:23,430
+to go.
+156
+
+157
+00:10:23,430 --> 00:10:28,430
+And this section of code will just create a single row inside our table,
+157
+
+158
+00:10:29,040 --> 00:10:31,530
+again, with no associated styling.
+158
+
+159
+00:10:31,710 --> 00:10:34,710
+So if there's nothing between these two tags,
+159
+
+160
+00:10:34,950 --> 00:10:39,300
+then you won't actually see anything appear on screen. Now,
+160
+
+161
+00:10:39,300 --> 00:10:42,810
+the next part is our table data
+161
+
+162
+00:10:42,840 --> 00:10:47,840
+or rather, our table cells that we create using the td tag. And in between the
+162
+
+163
+00:10:49,230 --> 00:10:53,220
+open and closing td tags, we place the actual data
+163
+
+164
+00:10:53,220 --> 00:10:55,590
+that's going to go into that cell.
+164
+
+165
+00:10:56,160 --> 00:11:00,660
+And this is a single table cell that's going to contain the word Angela
+165
+
+166
+00:11:01,020 --> 00:11:05,940
+and it's going to go inside the first table row. And so over here.
+166
+
+167
+00:11:06,630 --> 00:11:11,630
+And as you populate your table with more rows and more data, then you will see
+167
+
+168
+00:11:12,900 --> 00:11:15,900
+this structure reflected on your website.
+168
+
+169
+00:11:16,080 --> 00:11:20,640
+So the biggest hurdle that you have to get over is that there are no table
+169
+
+170
+00:11:20,640 --> 00:11:24,990
+columns. All that you're doing is going from top to bottom
+170
+
+171
+00:11:25,260 --> 00:11:29,130
+defining new table rows and inside each row,
+171
+
+172
+00:11:29,340 --> 00:11:34,340
+you're putting in individual cells and each cell gets placed horizontally, one
+172
+
+173
+00:11:36,060 --> 00:11:36,893
+after the other,
+173
+
+174
+00:11:37,140 --> 00:11:42,140
+creating effectively the columns. While the main job of tables is to display
+174
+
+175
+00:11:43,290 --> 00:11:44,400
+structured data,
+175
+
+176
+00:11:45,060 --> 00:11:50,060
+you can also see how you could use it to affect the layout of the various HTML
+176
+
+177
+00:11:51,120 --> 00:11:52,830
+elements on your website.
+177
+
+178
+00:11:53,340 --> 00:11:55,920
+And that's what we're going to look at in the next lesson.
