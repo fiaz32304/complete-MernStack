@@ -1,0 +1,31 @@
+h1{
+    font-size: 2em;
+    color: #f30b0b;
+    text-align: center;
+    margin-top: 20px;
+
+}
+h2{
+    font-size: 1.5em;
+    color: #8ae8ff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+hr{
+    border: dotted ;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+    width: 30%;
+}
+p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}

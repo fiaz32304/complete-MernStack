@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiaz,s personal site</title>
+</head>
+<style>
+    body{
+        background-color: #f0f0f0;
+    }
+
+<body>
+    <h1><strong>Fiaz Ahmad</strong></h1>
+    <img src="c:\Users\USER\OneDrive\Pictures\Saved Pictures\WhatsApp Image 2025-02-22 at 14.17.16_34fd7f14.jpg" alt="Profile Picture" width="150" height="150">
+    
+    <p><em>Founder of CTO of<strong><a href="https://github.com/fiaz32304/complete-MernStack"> the app brewery</a></strong></em></p>
+    <p>i am an IOS and web developer. i ❤️ coofee and brew my own beers.</p>
+    <hr>
+    <h2>Books and Teaching</h2>
+    <section>
+        <ul>
+            <li> The complete iOS app development Bootcamp</li>
+            <li> The complete web development Bootcamp</li> 
+        </ul>
+    </section>
+    <hr>
+    <h3>Work Experience</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Dates</th>
+                <th>Work</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+            <td>2013-2015 </td>
+            <td>Lead Developer at App Brewery</td>
+        </tr>
+        <tr>
+            <td>2010</td>
+            <td>Researcher</td>
+        </tr>
+            </tbody>  
+    </table>
+    <hr>
+    <h3>Skills</h3>
+    <table>
+        <tr>
+            <td>IOs Development</td>
+            <td>👌👌👌</td>
+
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>👌👌👌👌</td>
+        </tr>
+    </table>
+    <hr>
+
+    <a href="file:///D:/GitHub/complete-MernStack/mern%20stack%20cources/3.%20Intermediate%20HTML/My%20Hobbies.html">My hobbies</a><hr>
+    <a href="file:///D:/GitHub/complete-MernStack/mern%20stack%20cources/3.%20Intermediate%20HTML/Contact%20me.html">Contact me</a>
+
+
+</body>
+</html>
