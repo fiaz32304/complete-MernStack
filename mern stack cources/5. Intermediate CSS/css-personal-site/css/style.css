@@ -1,0 +1,61 @@
+body{
+    background-color: aqua;
+}
+h1{
+color:rgb(20, 20, 20);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+    text-decoration: underline;
+    margin:0;
+
+}
+p{
+    color:blueviolet
+}
+.container{
+    color: chartreuse;
+   
+    border: 2px solid black;
+}
+.top-container{
+    
+    padding: 20px;
+    
+    
+    
+}
+.middle-container{
+    background-color: rgb(244, 7, 7);
+    width:200px;
+    height: 200px;
+}
+.bottom-container{
+    background-color: lightgreen;
+    padding: 20px;
+    width:200px;
+    height: 200px;
+    
+}
+img{
+    width: 10px;
+    height: 20px;
+    border-radius: 10px;
+    display: block;
+
+}
+.top-cloud{
+    
+    width: 30;
+    height: 30px;
+    border-radius:0;
+    position: relative;
+}
+.bottom-cloud{
+    
+    width: 300px;
+    height: 300px;
+    border-radius:0;
+    position: relative;
+    margin: auto;
+}
