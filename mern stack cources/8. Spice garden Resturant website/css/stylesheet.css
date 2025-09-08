@@ -1,0 +1,147 @@
+/* ✅ General Reset */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ Navbar */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link.active {
+  color: #ffc107 !important;
+  font-weight: bold;
+}
+
+/* ✅ Hero Section (Home Page) */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/spice-chicken-biryani.jpeg") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* ✅ Cards (Dishes) */
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Menu Page */
+h1, h2, h3 {
+  color: #a83232;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* ✅ About Page */
+section p {
+  margin-bottom: 15px;
+}
+section h3 {
+  margin-top: 20px;
+  color: #444;
+}
+
+/* ✅ Contact & Reservation Forms */
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+/* ✅ Testimonials */
+blockquote {
+  background: #f8f9fa;
+  border-left: 5px solid #a83232;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* ✅ Footer */
+footer {
+  margin-top: 50px;
+}
+
+footer a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+/* ✅ Additional Enhancements */
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+  color: #000;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* ✅ Responsive improvements */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+  
+  .overlay-box {
+    padding: 20px;
+    margin: 0 15px;
+  }
+  
+  .card img {
+    height: 150px;
+  }
+}
