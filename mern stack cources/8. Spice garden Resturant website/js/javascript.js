@@ -2,28 +2,37 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   
-  // Validate Contact Form
-  const contactForm = document.querySelector("form"); 
-  if (contactForm && contactForm.querySelector("#message")) {
+  // Validate + Submit Contact Form (mock)
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
       const name = document.getElementById("name").value.trim();
       const email = document.getElementById("email").value.trim();
       const message = document.getElementById("message").value.trim();
 
       if (name === "" || email === "" || message === "") {
         alert("⚠️ Please fill in all fields before submitting.");
-        e.preventDefault(); // stop form from submitting
-      } else if (!validateEmail(email)) {
+        return;
+      } 
+      if (!validateEmail(email)) {
         alert("⚠️ Please enter a valid email address.");
-        e.preventDefault();
+        return;
       }
+
+      const contactAlert = document.getElementById("contact-alert");
+      if (contactAlert) {
+        contactAlert.classList.remove("d-none");
+      }
+      contactForm.reset();
     });
   }
 
-  // Validate Reservation Form
-  const reservationForm = document.querySelector("form"); 
-  if (reservationForm && reservationForm.querySelector("#res-date")) {
+  // Validate + Submit Reservation Form (mock)
+  const reservationForm = document.getElementById("reservation-form");
+  if (reservationForm) {
     reservationForm.addEventListener("submit", function (e) {
+      e.preventDefault();
       const name = document.getElementById("res-name").value.trim();
       const email = document.getElementById("res-email").value.trim();
       const phone = document.getElementById("res-phone").value.trim();
@@ -33,18 +42,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (name === "" || email === "" || phone === "" || date === "" || time === "" || guests === "") {
         alert("⚠️ Please complete all reservation fields.");
-        e.preventDefault();
-      } else if (!validateEmail(email)) {
-        alert("⚠️ Please enter a valid email address.");
-        e.preventDefault();
-      } else if (guests <= 0) {
-        alert("⚠️ Number of guests must be at least 1.");
-        e.preventDefault();
+        return;
       }
+      if (!validateEmail(email)) {
+        alert("⚠️ Please enter a valid email address.");
+        return;
+      }
+      if (Number(guests) <= 0) {
+        alert("⚠️ Number of guests must be at least 1.");
+        return;
+      }
+
+      const reservationAlert = document.getElementById("reservation-alert");
+      if (reservationAlert) {
+        reservationAlert.classList.remove("d-none");
+      }
+      reservationForm.reset();
     });
   }
 
-  // ✅ Helper Function for Email Validation
+  // Helper Function for Email Validation
   function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
